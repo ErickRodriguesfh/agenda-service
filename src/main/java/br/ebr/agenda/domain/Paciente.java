@@ -1,6 +1,7 @@
 package br.ebr.agenda.domain;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
@@ -9,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+@NoArgsConstructor
 @Getter
 @Setter
 @Entity
@@ -22,5 +24,6 @@ public class Paciente {
     private String sobrenome;
     private String email;
     private String cpf;
+    private String senha;
 
 }
